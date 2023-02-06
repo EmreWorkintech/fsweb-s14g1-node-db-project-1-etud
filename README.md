@@ -88,7 +88,7 @@ db('foo-table').where('id', id).delete() // silme işleminden etkilenen **kayıt
     - Bütçe bir sayıya dönüştürülemiyorsa, `{ message: "budget of account must be a number" }` döndürün
     - Bütçe negatif bir sayıysa veya bir milyonun üzerindeyse, `{ message: "budget of account is too large or too small" }` döndürün
 
-  - `checkAccountId`, veritabanında `req.params.id` yoksa `{ message: "that name is taken" }` ile bir durum 404 döndürün
+  - `checkAccountId`, veritabanında `req.params.id` yoksa `{ message: "account not found" }` ile bir durum 404 döndürün
 
   - _trimmed_ `req.body.name` zaten veritabanında mevcutsa, `checkAccountNameUnique`, `{ message: "that name is taken" }` ile bir durum 400 döndürün
 
