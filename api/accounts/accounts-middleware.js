@@ -1,12 +1,11 @@
 exports.checkAccountPayload = (req, res, next) => {
-  // KODLAR BURAYA
-  // Not: Validasyon için Yup(şu an yüklü değil!) kullanabilirsiniz veya kendiniz manuel yazabilirsiniz.
+  next()
 }
 
 exports.checkAccountNameUnique = (req, res, next) => {
-  // KODLAR BURAYA
+  next()
 }
 
 exports.checkAccountId = (req, res, next) => {
-  // KODLAR BURAYA
+  next()
 }
